@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Nw slider</title>
+		<meta content="Nw slider, a javascript library to develop carousel fast and easy" name="description" />
+		<meta content="Gilbert López | Newronas" name="author" />
+		<link rel="stylesheet" href="assets/css/nw-slider.min.css" type="text/css" />
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	</head>
+	<body>
+
+		<div class="container text-center">
+
+			<header>
+				<h2 class="title">NW SLIDER</h2>
+				<h1><span class="nw-slider">Nw slider</span> is a <b>responsive</b> carousel very <b>simple</b> yet enough to make an <b>elegant</b> slider of images.</h1>
+				<div class="description">
+					<hr>
+					<p>It works with a <b>javascript library with only 2KB in size</b> and does not require jQuery.</p>
+					<p><b>Transitions fall on css styles</b>, yet the <span>nw slider</span> <b>css file weighs just under 4KB</b>.</p>
+					<p>The propositios of <span>nw slider</span> are: <b>light and simple</b>.</p>
+					<p>Put a <b>nice</b> carousel on your website with <b>only 6KB</b> in size.</p>
+					<hr>
+				</div>
+			</header>
+
+			<h2>
+				These are the effects that can currently perform nw slider.
+			</h2>
+
+			<div class="nw-slider-container">
+				<p>transition none</p>
+				<div id="nw-slider">
+					<ul>
+						<li><img src="assets/images/n.jpg"></li>
+						<li><img src="assets/images/nw.jpg"></li>
+						<li><img src="assets/images/nws.jpg"></li>
+						<li><img src="assets/images/nwsl.jpg"></li>
+						<li><img src="assets/images/nwsli.jpg"></li>
+						<li><img src="assets/images/nwslid.jpg"></li>
+						<li><img src="assets/images/nwslide.jpg"></li>
+						<li><img src="assets/images/nwslider.jpg"></li>
+						<li><img src="assets/images/none.jpg"></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nw-slider-container">
+				<p>transition linear-top</p>
+				<div id="nw-slider0">
+					<ul>
+						<li>
+							<img src="assets/images/1.jpg" />
+							<span class="nw-slider-text">text image 1</span>
+						</li>
+						<li>
+							<img src="assets/images/2.jpg" />
+							<span>text image 2</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nw-slider-container">
+				<p>transition linear-left</p>
+				<div id="nw-slider1">
+					<ul>
+						<li><img src="assets/images/1.jpg" /></li>
+						<li><img src="assets/images/2.jpg" /></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nw-slider-container">
+				<p>transition linear-bottom</p>
+				<div id="nw-slider2">
+					<ul>
+						<li><img src="assets/images/1.jpg" /></li>
+						<li><img src="assets/images/2.jpg" /></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nw-slider-container">
+				<p>transition linear-right</p>
+				<div id="nw-slider3">
+					<ul>
+						<li><img src="assets/images/1.jpg" /></li>
+						<li><img src="assets/images/2.jpg" /></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nw-slider-container">
+				<p>transition top-center</p>
+				<div id="nw-slider4">
+					<ul>
+						<li>
+							<img src="assets/images/1.jpg" />
+							<span>text example 1</span>
+						</li>
+						<li>
+							<img src="assets/images/2.jpg" />
+							<span>text example 1</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nw-slider-container">
+				<p>transition opacity</p>
+				<div id="nw-slider5">
+					<ul>
+						<li>
+							<img src="assets/images/1.jpg" />
+							<span>text example 1</span>
+						</li>
+						<li>
+							<img src="assets/images/2.jpg" />
+							<span>text example 2</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nw-slider-container">
+				<p>transition corner</p>
+				<div id="nw-slider6">
+					<ul>
+						<li>
+							<img src="assets/images/1.jpg" />
+							<span>nw slider 1</span>
+						</li>
+						<li>
+							<img src="assets/images/2.jpg" />
+							<span>nw slider 2</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<hr>
+			<div class="description">
+				<h2 class="text-center">Do I know to use nw slider?</h2>
+				<ol>
+					<li>
+						<b>Implements the code of nw slider, css and js inside the head tag.</b><br>
+						<small>(change the path if necessary to nw-slider.min.css and to nw-slider.min.js)</small><br>
+						<small>(nw-slider.min.js can be loaded inside the head or inside the body)</small>
+						<div class="code">
+							&lt;head&gt;<br>
+							<div style="margin-left:1em;">
+								//your head code<br>
+								<span class="black">&lt;link rel="stylesheet" href="assets/css/nw-slider.min.css" type="text/css"&gt;<br>
+								&lt;script src="assets/js/nw-slider.min.js"&gt;</span>
+							</div>
+							&lt;/head&gt;
+						</div>
+					</li>
+					<li>
+						<b>Create a div with the css properties you want (it can be dynamic) nw slider will automatically adjust its width and height.</b>
+						<div class="code black">
+							&lt;div style="width:450px"&gt;
+							<br>
+							&lt;/div&gt;
+						</div>
+					</li>
+					<li>
+						<b>Inside the previous div create a div with the id you want (this id is mandatory) and make a list of images inside this using the label ul.</b>
+						<div class="code">
+							&lt;div style="width:450px"&gt;
+							<div style="margin-left:1em" class="black">
+								&lt;div id="my-id"&gt;
+								<div style="margin-left:2em">
+									&lt;ul&gt;
+								</div>
+								<div style="margin-left:3em">
+									&lt;li&gt;&lt;img src="image_1.png" /&gt;&lt;/li&gt;
+									<br>
+									&lt;li&gt;&lt;img src="image_2.png" /&gt;&lt;/li&gt;
+									<br>
+									&lt;li&gt;&lt;img src="image_3.png" /&gt;&lt;/li&gt;
+									<br>
+								</div>
+								<div style="margin-left:2em">
+									&lt;/ul&gt;
+								</div>
+								&lt;/div&gt;
+							</div>
+							&lt;/div&gt;
+						</div>
+					</li>
+					<li>
+						<b>Now I just need the javascript.</b>
+						<div class="code black">
+							&lt;script&gt;<br>
+							<div style="margin-left:1em">
+								NW_SLIDER.add({<br>
+							</div>
+							<div style="margin-left:2em">
+								id: 'my-id'<br>
+							</div>
+							<div style="margin-left:1em">
+								});
+							</div>
+							&lt;/script&gt;
+						</div>
+						You already have your slider running!<br>
+						NW_SLIDER.add is the javascript method for the slider to work. The only mandatory parameter is the id of the div containing the list of images. Other possible parameters are explained later.
+						<br><br>
+					</li>
+					<li>
+						<b>To add another slider to the same page, follow steps 2, 3 and 4. All you have to do is assign a different id.</b>
+					</li>
+				</ol>
+			</div>
+			<hr>
+			<div class="description">
+				<h2 class="text-center">Configuration</h2>
+				<p><b>Available transitions</b></p>
+				<ul>
+					<li>linear-left</li>
+					<li>linear-right</li>
+					<li>linear-top</li>
+					<li>linear-bottom</li>
+					<li>top-center</li>
+					<li>none</li>
+					<li>corner</li>
+					<li>opacity</li>
+				</ul>
+				<p><b>How to assign a transition?</b></p>
+				<p>Add the transition property in the NW method SLIDER.add and assign the transition name as the value.</p>
+				<div class="code">
+					&lt;script&gt;<br>
+					<div style="margin-left:1em">
+						NW_SLIDER.add({<br>
+					</div>
+					<div style="margin-left:2em">
+						id: 'my-id',<br>
+						<span class="black">transition: 'opacity'</span>
+					</div>
+					<div style="margin-left:1em">
+						});
+					</div>
+					&lt;/script&gt;
+				</div>
+				<p><span class="blue">Keep in mind</span><br>If the transition property is not defined, it acts linear-left by default.</p>
+				<p><b>How to set the speed?</b></p>
+				<p>Add the speed property in the NW method SLIDER.add and assign number of milliseconds as the value.</p>
+				<div class="code">
+					&lt;script&gt;<br>
+					<div style="margin-left:1em">
+						NW_SLIDER.add({<br>
+					</div>
+					<div style="margin-left:2em">
+						id: 'nw-slider',<br>
+						transition: 'top-center',<br>
+						<span class="black">speed: 3000</span>
+					</div>
+					<div style="margin-left:1em">
+						});
+					</div>
+					&lt;/script&gt;
+				</div>
+				<p><span class="blue">Keep in mind</span><br>
+					If the speed property is not defined, it acts 5000 milliseconds by default.<br>
+					At least must allocate 2000 milliseconds, except the none transition that has no minimun limit and the opacity transition that at least 6000 milliseconds.
+				</p>
+				<p><b>How to add buttons to pass the images?</b></p>
+				<p>Add the buttons property in the NW method SLIDER.add and assign true as the value.</p>
+				<div class="code">
+					&lt;script&gt;<br>
+					<div style="margin-left:1em">
+						NW_SLIDER.add({<br>
+					</div>
+					<div style="margin-left:2em">
+						id: 'nw-slider',<br>
+						transition: 'top-center',<br>
+						speed: 3000,<br>
+						<span class="black">buttons: true</span>
+					</div>
+					<div style="margin-left:1em">
+						});
+					</div>
+					&lt;/script&gt;
+				</div>
+				<p><span class="blue">Keep in mind</span><br>
+					If the buttons property is not assigned, the buttons will not appear by default.
+				</p>
+				<p><b>How to add text, links ... to the slider?</b></p>
+				<p>Inside the &lt;li&gt; tag, add the &lt;span&gt; &lt;/span&gt; tags and type between them.</span></p>
+				<div class="code">
+					&lt;div style="width:450px"&gt;
+					<div style="margin-left:1em">
+						&lt;div id="my-id"&gt;
+						<div style="margin-left:2em">
+							&lt;ul&gt;
+						</div>
+						<div style="margin-left:3em">
+							&lt;li&gt;<br>
+								<div style="margin-left:1em">
+								&lt;img src="image_1.png" /&gt;<br>
+								<span class="black">&lt;span&gt;some text here for image 1&lt;/span&gt;</span>
+								</div>
+							&lt;/li&gt;
+							<br>
+							&lt;li&gt;<br>
+								<div style="margin-left:1em">
+								&lt;img src="image_2.png" /&gt;<br>
+								<span class="black">&lt;span&gt;some text here for image 2&lt;/span&gt;</span>
+								</div>
+							&lt;/li&gt;
+							<br>
+							&lt;li&gt;<br>
+								<div style="margin-left:1em">
+								&lt;img src="image_3.png" /&gt;<br>
+								<span class="black">&lt;span&gt;some text here for image 3&lt;/span&gt;</span>
+								</div>
+							&lt;/li&gt;
+							<br>
+						</div>
+						<div style="margin-left:2em">
+							&lt;/ul&gt;
+						</div>
+						&lt;/div&gt;
+					</div>
+					&lt;/div&gt;
+				</div>
+				<hr>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assets/js/nw-slider.min.js"></script>
+		<script type="text/javascript">
+
+			window.onload = function(){
+
+				NW_SLIDER.add({
+					id: 'nw-slider',
+					speed:200,
+					transition: 'none',
+					buttons: true
+				});
+
+				NW_SLIDER.add({
+					id: 'nw-slider0',
+					speed: 2000,
+					transition: 'linear-top',
+
+				});
+
+				NW_SLIDER.add({
+					id: 'nw-slider1',
+					speed: 2500
+				});
+
+				NW_SLIDER.add({
+					id: 'nw-slider2',
+					speed:3000,
+					transition: 'linear-bottom',
+					buttons:true
+				});
+
+				NW_SLIDER.add({
+					id: 'nw-slider3',
+					speed:3500,
+					transition: 'linear-right'
+				});
+
+				NW_SLIDER.add({
+					id: 'nw-slider4',
+					speed:4000,
+					transition: 'top-center',
+					buttons:true
+				});
+
+				NW_SLIDER.add({
+					id: 'nw-slider5',
+					speed:6000,
+					transition: 'opacity'
+				});
+
+				NW_SLIDER.add({
+					id: 'nw-slider6',
+					speed:5000,
+					transition: 'corner',
+					buttons:true
+				});
+			}
+
+		</script>
+
+	</body>
+</html>
