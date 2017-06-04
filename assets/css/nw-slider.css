@@ -1,22 +1,16 @@
 .nw-slider{
   position:relative;
-  max-width:100%;
   overflow: hidden;
-  list-style: none;
-}
-.nw-slider ul{
-  max-width:100%;
 }
 .nw-slider li{
+  list-style:none;
   position: absolute;
   top: 0;
   left: 0;
   max-width: 100%;
-  overflow:hidden;
 }
 .nw-slider li img{
   max-width: 100%;
-  z-index:1;
 }
 .nw-slider li span{
   width:96%;
@@ -24,7 +18,7 @@
   position:absolute;
   left:0px;
   padding:2%;
-  bottom:7px;
+  bottom:2%;
 }
 
 .nw-slider .nw-slider-linear-left-primary{
@@ -184,8 +178,6 @@
   margin-top:auto;
   margin-bottom:auto;
   width:4%;
-  max-width:4%;
-  height:auto;
   background-size: 100%;
   background-repeat:no-repeat;
   background-position: center center;

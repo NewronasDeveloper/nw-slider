@@ -1,22 +1,48 @@
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+}
 body{
 	color:#333;
+}
+a{
+	color:blue;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration: underline;
+}
+hr{
+	color:#e1e1e1;
+}
+.black{
+	color:black;
+}
+.blue{
+	color:#068CE5;
 }
 .text-center{
 	text-align:center;
 }
-.description{
-	padding-top:20px;
-	padding-bottom:20px;
+.text-left{
+	text-align:left;
+}
+@media screen and (max-width:991px){
+	.m-text-center{
+		text-align:center;
+	}
 }
 .container{
 	clear:left;
 	width:75%;
 	margin:0 auto;
-	font-family: Tahoma, Geneva, sans-serif;
 }
 .container .title{
 	font-size:30px;
 	color:#068CE5;
+	margin-bottom:0;
+}
+.container .sub-title{
+	margin-top:0;
 }
 .nw-slider-container{
 	width:23%;
@@ -38,8 +64,73 @@ body{
 		margin-bottom:20px;
 	}
 }
-hr{
-	color:#e1e1e1;
+.rows:after{
+	content:" ";
+	clear:both;
+	display:block;
+}
+@media screen and (min-width:992px){
+	.col-33{
+		width:33.3%;
+		max-width:33.3%;
+		float:left;
+		position:relative;
+		min-height:1px;
+	}
+}
+@media screen and (max-width:991px){
+	.top-body{
+		padding-top:40px;
+	}
+}
+
+nav.nw-slider-nav ul{
+	position:fixed;
+	top:10px;
+	left:10px;
+	margin:0;
+	padding:0;
+	z-index:2;
+}
+
+@media screen and (max-width:991px){
+	nav.nw-slider-nav ul{
+		right:0;
+		left:0;
+		margin-right:auto;
+		margin-left:auto;
+		width:303px;
+	}
+}
+
+nav.nw-slider-nav ul li{
+	float:left;
+	list-style: none;
+	padding:10px;
+	background:white;
+	border-top:2px solid #068CE5;
+	border-bottom:2px solid #068CE5;
+}
+
+@media screen and (max-width:991px){
+	nav.nw-slider-nav ul li{
+		padding:5px;
+		font-size:14px;
+	}
+}
+nav.nw-slider-nav ul li:first-child{
+	border-left:2px solid #068CE5;
+}
+nav.nw-slider-nav ul li:last-child{
+	border-right:2px solid #068CE5;
+}
+nav.nw-slider-nav ul li a{
+	color:#068CE5;
+	cursor:pointer;
+}
+.description{
+	padding-top:20px;
+	padding-bottom:20px;
 }
 .code{
 	border:1px solid #686868;
@@ -47,9 +138,30 @@ hr{
 	margin-top:15px;
 	margin-bottom:30px;
 }
-.black{
-	color:black;
+
+article, .articles li{
+	padding:1px 10px;
+	background:#ebebeb;
+	margin-bottom:40px;
 }
-.blue{
-	color:#068CE5;
+.keep-in-mind{
+	border: 2px solid #068CE5;
+	padding:0 10px;
+	margin-bottom:20px;
+}
+footer{
+	background:#313030;
+	color:white;
+	padding-bottom:20px;
+	width:100%;
+}
+	footer a{
+		color:white;
+	}
+	footer a:hover{
+		text-decoration:underline;
+	}
+footer .bottom{
+	margin-top:50px;
+	text-align:center;
 }
