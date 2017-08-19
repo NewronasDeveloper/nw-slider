@@ -1,6 +1,8 @@
 function nw_slider_lib(){
 
 	var btnActive,
+		calc_height_by_img = 0,
+		nw_container,
 		self = this,
 		speed,
 		transition,
@@ -18,17 +20,14 @@ function nw_slider_lib(){
 		this.nw_elements = document.querySelectorAll('#' + config['id'] + ' ul li');
 		this.nw_elements_length = this.nw_elements.length;
 
-		var nw_container = document.getElementById(config['id']);
+		nw_container = document.getElementById(config['id']);
 		nw_container.classList.add("nw-slider");
-
-		var calc_height_by_img = document.querySelector('#' + config['id'] + ' li img');
-		nw_container.style.height = calc_height_by_img.height + 'px';
 
 		nw_container.onmouseover = function(){transition_success = false;}
 		nw_container.onmouseout = function(){transition_success = true;}
 
 		set_vars(config);
-		if(config['buttons'] != undefined && config['buttons'] == true)
+		if(config['buttons'])
 			add_buttons(nw_container);
 
 		prepare();
@@ -120,9 +119,15 @@ function nw_slider_lib(){
 
 	function set_vars(config){
 
-		if(config['backgroundColor'] != undefined)
-			for(var i = 0; i < this.nw_elements_length; i++)
-    			this.nw_elements[i].style.backgroundColor = config['backgroundColor'];
+		for(var i = 0; i < self.nw_elements_length; i++){
+			if(config['backgroundColor'] != undefined)
+				self.nw_elements[i].style.backgroundColor = config['backgroundColor'];
+
+			if(self.nw_elements[i].children[0].height > calc_height_by_img){
+				calc_height_by_img = self.nw_elements[i].children[0].height;
+				nw_container.style.height = calc_height_by_img + 'px';
+			}
+		}
 
 		transition = ((config['transition']!=undefined)?config['transition']:'linear-left');
 		speed = ((config['speed']!=undefined)?config['speed']:5000);
